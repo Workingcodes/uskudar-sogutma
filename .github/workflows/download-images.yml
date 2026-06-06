@@ -33,25 +33,17 @@ jobs:
           curl -sL --retry 3 -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -H "Referer: https://www.instagram.com/" -o img/galeri/gm_12.jpg "https://scontent-dfw5-1.cdninstagram.com/v/t51.71878-15/555409952_812625571222882_3978099909543211119_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEjr9nHLOsXPze4f71mpAIDjumt6ECcZpj1iGGN3M9IrTVJ0OrQp_u5zXcrAx8Y6y0&_nc_ohc=2Nc-mesgBfgQ7kNvwGc3-uW&_nc_gid=nuQNulRkE0b1TEK6Lmy0oQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af8x7EEEhSW2RhSHT92THB4zozMtuLZYa7j3iqAGp68fFQ&oe=6A2A1E23&_nc_sid=10d13b" && echo "gm_12: $(wc -c < img/galeri/gm_12.jpg) bytes"
           curl -sL --retry 3 -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -H "Referer: https://www.instagram.com/" -o img/galeri/gm_13.jpg "https://scontent-hou1-1.cdninstagram.com/v/t51.71878-15/590419020_1143961207528723_1782285493753977818_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFpIejdahmDH7dbpVLxCx3WPF5TUpgYmRJI3P_UbR_llwmMDMyq3sydTR_A10DXnKA&_nc_ohc=YhR9Y5B58DYQ7kNvwHYw-Js&_nc_gid=R3lJbZskD9EMJWfF4SGbSw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af9foQPzRa4Jzwlq2NJnVp-OOUyUQGeZVOw2l53qJRnmtQ&oe=6A2A38DB&_nc_sid=10d13b" && echo "gm_13: $(wc -c < img/galeri/gm_13.jpg) bytes"
           curl -sL --retry 3 -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -H "Referer: https://www.instagram.com/" -o img/galeri/gm_14.jpg "https://scontent-hou1-1.cdninstagram.com/v/t51.71878-15/627693329_1669378897761895_6545173357725781951_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEyNWGwl8sQIYuhYKgUeVbzRPaY5wxAVT-AX-3s6L6IPSKgcKj0tjPNvHzScJR-l3s&_nc_ohc=E5uWtJ_WzdQQ7kNvwHKL-z_&_nc_gid=SFHQk2T9sB3CxJgUJdgvQw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af-uLjXVEN9xusRwRtJJ16RpX_0OAHxWGW0h_X76FsdaqQ&oe=6A2A1DD2&_nc_sid=10d13b" && echo "gm_14: $(wc -c < img/galeri/gm_14.jpg) bytes"
-          curl -sL --retry 3 -H "User-Agent: Mozilla/5.0" -o assets/logo.jpg "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-19/641857605_17940696876132374_2562602779697358535_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gEPPXdtbAVnfulFgE2WMzrnkP1rwUVTZPCGCjHxWYHJlvC1KDLwaI4gX9F_KjXX_FM&_nc_ohc=WR-UxCEyWO4Q7kNvwHvw2w6&_nc_gid=Pzj9n4a1WWyza_txdkiKXA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af80qrOXBA8wIYtXjGwsyoMGnzJ1Wfrf9kVqdt4V9WXlug&oe=6A29F738&_nc_sid=8b3546" && echo "logo: $(wc -c < assets/logo.jpg) bytes"
-          echo "Download step complete"
-
-      - name: Verify downloads
-        run: |
-          echo "Files > 1KB:"
-          find img/galeri -size +1k -exec ls -la {} \;
-          echo "Logo size:"
-          ls -la assets/logo.jpg || echo "Logo not downloaded"
+          curl -sL --retry 3 -H "User-Agent: Mozilla/5.0" -H "Referer: https://www.instagram.com/" -o assets/logo.jpg "https://scontent-atl3-2.cdninstagram.com/v/t51.82787-19/641857605_17940696876132374_2562602779697358535_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGcfR5SeGGV4nUvNSDR7YUQh72wiStn-9QPr7d0k-tHmF36P5SdHQnF-MTPL0b43tE&_nc_ohc=WR-UxCEyWO4Q7kNvwFp8F06&_nc_gid=uOlleJYJbhyvOqjwceuhOA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af_9q0SVf1YcOXAqUHumW0glqGSFk7Nnb-kF6R8mV6Fxog&oe=6A2A2F78&_nc_sid=8b3546" && echo "logo: $(wc -c < assets/logo.jpg) bytes"
+          echo "Downloads complete"
 
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add img/galeri/ assets/logo.jpg
-          git status
           if git diff --staged --quiet; then
-            echo "Nothing to commit"
+            echo "Nothing new to commit"
           else
-            git commit -m "Add Instagram images downloaded via GitHub Actions"
+            git commit -m "Update logo with fresh URL"
             git push origin main
           fi
